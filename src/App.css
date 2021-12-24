@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+.logo{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50% 50%;
+    
+    font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+height: 25px;
+width: 24px;
+
+}
+.Logo{
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 22px;
+    height: 22px;
+    
+}
+.titel {
+    text-align: center;
+    margin-top: 30px;
+    
+    
+    
+     
+}
+.titel h1 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+}
+.titel p {
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    
+    
+}
+.titel p a {
+    text-decoration:none;
+    border-bottom: 1px solid black;
+    color: rgb(116, 114, 114);
+}
+.username{
+    
+   
+    margin: 10px 0px;
+    width: 400px;
+   border-right: 1px solid black;
+    
+}
+.row-1 {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.row-1 p {
+    font-weight: normal;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+}
+.service p {
+    color: rgb(122, 122, 122);
+font-size: 14px;
+    font-weight: normal;
+    
+}
+.service p a {
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+.button {
+    margin-top: 30px;
+}
+.button button {
+    width: 400px;
+    padding: 9px 0;
+    border-radius: 10px;
+    background-color: rgb(35, 112, 255);
+    color: white;
+    border: none;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button :hover {
+    background-color: blue;
+}
+.row-2 {
+    margin: 15px 50px;
+    
+}
+.or {
+    margin-left: -8px;
+}
+.line{
+  border-left: 1px solid rgb(230, 230, 230); 
+  height: 200px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.google {
+    margin-top: -330px;
+    margin-left: 50px;
+    display: flex;
+   
+}
+.appl {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.circle {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 50% 50%;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 1px  rgb(221, 219, 219);
+    
+    
+}
+.circle-appl {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 50% 50%;
+    padding: 11px 11px;
+    color: black;
+
+    box-shadow: 1px 1px  rgb(221, 219, 219);
+}
+.text-google {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    
+    
+}
+.text-Appl {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.text-google :hover {
+color: rgb(99, 99, 99);
+}
+.text-last {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.text-last .paragraph{
+    font-size: 13px;
+    font-weight:normal;
+    color: rgb(145, 143, 143);
+    width: 400px;
+    
+    
+}
+.text-last .paragraph .last-link {
+    text-decoration: none;
+    color: rgb(145, 143, 143) ;
+    border-bottom: 1px solid rgb(110, 110, 110);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* for <1200 */
+@media only screen and (max-width: 1200px) {
+
+.row-1 {
+    margin-left: 0px;
+}
+.username{
+    
+   
+    margin: 10px 0px;
+    width: 350px;
+   border-right: 1px solid black;
+    
+}
+.button button {
+    width: 350px;
+    padding: 9px 0;
+    border-radius: 10px;
+    background-color: rgb(35, 112, 255);
+    color: white;
+    border: none;
+    
 }
 
-.App-link {
-  color: #61dafb;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 1400px) {
+.row-1 {
+    margin-left: 0px;
+}
+
+}
+@media only screen and (max-width: 1000px) {
+.line-fle {
+ justify-content: center;
+display: flow-root;
+}
+.row-1 {
+    margin: 30px auto;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .titel p {
+        margin-left: 30px;
+
+    }
+    .username {
+        width: 100%;
+    }
+    .button button {
+        width: 100%;
+    }
 }
