@@ -27,3 +27,16 @@ if (loading) {
   )
 }
 */
+
+
+import React from "react";
+const password = () => {
+
+  return (
+    <section>
+    <div className="center"><h1>W</h1></div>
+    </section>
+  )
+}
+
+export default password
