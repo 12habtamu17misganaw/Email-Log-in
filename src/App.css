@@ -1,7 +1,10 @@
+
+
+
 .logo{
     font-size: 20px;
     border: 2px solid black;
-    border-radius: 50% 50%;
+    border-radius: 50px 50px;
     
     font-weight: bold;
 font-family: Arial, Helvetica, sans-serif;
@@ -56,7 +59,7 @@ width: 24px;
 }
 .row-1 p {
     font-weight: normal;
-    color: rgb(61, 61, 61);
+    color: rgb(0, 0, 0);
     font-size: 14px;
 }
 .service p {
@@ -76,7 +79,7 @@ font-size: 14px;
 .button button {
     width: 400px;
     padding: 9px 0;
-    border-radius: 10px;
+    
     background-color: rgb(35, 112, 255);
     color: white;
     border: none;
@@ -84,7 +87,7 @@ font-size: 14px;
 }
 
 .button :hover {
-    background-color: blue;
+    background-color: rgb(56, 56, 236);
 }
 .row-2 {
     margin: 15px 50px;
@@ -92,10 +95,14 @@ font-size: 14px;
 }
 .or {
     margin-left: -8px;
+    
 }
 .line{
   border-left: 1px solid rgb(230, 230, 230); 
-  height: 200px; 
+  
+  height: 200px;
+ 
+ 
 }
 
 .google {
@@ -111,18 +118,22 @@ font-size: 14px;
 .circle {
     border: 1px solid rgb(194, 194, 194);
     border-radius: 50% 50%;
-    padding: 10px 15px;
+    padding: 6px 12px;
     color: black;
     text-decoration: none;
     box-shadow: 1px 1px  rgb(221, 219, 219);
+    font-size: 25px;
+    
     
     
 }
+ 
 .circle-appl {
     border: 1px solid rgb(194, 194, 194);
     border-radius: 50% 50%;
-    padding: 11px 11px;
+    padding: 13px 13px;
     color: black;
+    
 
     box-shadow: 1px 1px  rgb(221, 219, 219);
 }
@@ -130,7 +141,7 @@ font-size: 14px;
     text-decoration: none;
     margin-left: 10px;
     color: rgb(99, 99, 99);
-    font-size: 13px;
+    font-size: 15px;
     
     
 }
@@ -138,7 +149,7 @@ font-size: 14px;
     text-decoration: none;
     margin-left: 10px;
     color: rgb(99, 99, 99);
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 10px;
 }
 .text-google :hover {
@@ -195,26 +206,230 @@ color: rgb(99, 99, 99);
 }
 
 }
-@media only screen and (max-width: 1000px) {
-.line-fle {
- justify-content: center;
-display: flow-root;
-}
-.row-1 {
-    margin: 30px auto;
-
-}
+@media only screen and (max-width: 800px) {
+  
+    .titel h1 {
+        font-size: 45px;
+    }
+    .titel p {
+        font-size: 18px;
+    }
+    .line{
+        border-top: 1px solid rgb(230, 230, 230); 
+        
+        width: 300px;
+        height: 0px;
+      
+        
+      }
+      .appl {
+          width: 500px;
+      }
+      .line-fil {
+        display: flex;
+        margin-left: -0px;
+        width: 600px;
+       
+    }
+    .google {
+        margin-top: 50px;
+        width: 500px;
+    }
+    .or {
+        margin-left: 0px;
+        margin-top: -9px;
+    }
+    .other {
+        margin-left: 120px;
+    }
+    .row-1 {
+        margin:30px auto;
+    }
+    .text-last .paragraph {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .titel p {
-        margin-left: 30px;
-
+   
+    .row-1 {
+        margin-left: -10px;
     }
+    
     .username {
-        width: 100%;
+        width: 300px;
     }
     .button button {
+        width: 300px;
+    }
+    .line{
+        border-top: 1px solid rgb(230, 230, 230); 
+        
+        width: 230px;
+        height: 0px;
+        
+      }
+      .line-fil {
+        display: flex;
+        margin-left: -50px;
+    }
+    .google {
+        margin-top: 0px;
+    }
+    .or {
+        margin-left: 0px;
+        margin-top: -9px;
+    }
+    .other {
+        margin-left: -120px;
+    }
+    .text-last .paragraph {
+    margin-left: -120px;
+      font-size: 13px;
+    height: 10px;
+    width: 100%;
+    
+    }
+    .text-last {
         width: 100%;
     }
+    .titel p {
+        margin-left: 30px;
+    }
 }
+    
+    @media only screen and (max-width: 500px) {
+
+       
+        .row-1 {
+            margin-left: 0px;
+        }
+       
+        .username {
+            width: 350px;
+        }
+        .button button {
+            width: 350px;
+        }
+        .service p {
+            width: 370px;
+        }
+        .line{
+            border-top: 1px solid rgb(230, 230, 230); 
+            
+            width: 230px;
+            height: 0px;
+            
+          }
+          .line-fil {
+            display: flex;
+            margin-left: -50px;
+        }
+        .google {
+            margin-top: 0px;
+        }
+        .or {
+            margin-left: 0px;
+            margin-top: -9px;
+        }
+        .other {
+            margin-left: -100px;
+        }
+        .text-last .paragraph {
+        margin-right: 0px;
+          font-size: 12px;
+        height: 10px;
+        width: 400px;
+        margin-bottom: 100px;
+        padding-left: 8px;
+        
+        
+        }
+        
+        .titel p a {
+            text-decoration:none;
+            border-bottom: 1px solid black;
+            color: rgb(116, 114, 114);
+        }
+        .titel h1 {
+            font-size: 36px;
+           margin-left: 50px;
+        }
+        .titel p {
+            width: 350px;
+            margin-top: 20px;
+            font-size: 17px;
+            margin-left: 30px;
+            
+        }
+       
+    }
+
+    @media only screen and (max-width: 400px) {
+        .text-last .paragraph {
+            width: 300px;
+            text-align: start;
+        }
+        .titel p {
+           max-width: 300px;
+            margin-left: 50px;
+
+        }
+        .service p {
+            width: 300px;
+        }
+        .username {
+            width: 330px;
+        }
+        .button button {
+            width: 330px;
+        }
+        
+
+    }
+   
+
+    @media only screen and (max-width: 370px) {
+     .username {
+         width:100%;
+         
+     }
+     .button button {
+         width: 100%;
+     }
+     .titel p {
+         margin-left: 20px;
+
+        
+     }
+    }
+    @media only screen and (max-width: 370px) {
+        .titel p {
+            width: 200px;
+            margin: 20px auto;
+        }
+        .service p {
+            width: 270px;
+        }
+        .line {
+            width: 140px;
+        }
+        .or {
+            margin-left: -10px;
+        }
+        .text-last .paragraph {
+            width: 280px;
+        }
+    }
+
+    @media only screen and (max-width: 370px) {
+        .titel p {
+            width: 150px;
+        }
+        .service p {
+            width: 200px;
+        }
+        .text-last .paragraph {
+            width: 220px;
+        }
+    }

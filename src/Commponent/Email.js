@@ -6,7 +6,9 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import AppleIcon from "@material-ui/icons/Apple";
+import AppleIcon from '@material-ui/icons/Apple';
+import {FcGoogle} from "react-icons/fc"
+
 
 const Email = () => {
   const [values, setValues] = React.useState({
@@ -26,6 +28,27 @@ const Email = () => {
   };
 
   const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
+
+  const [check, setCheck] = React.useState({
+    amount: "",
+    password: "",
+    weight: "",
+    weightRange: "",
+    showPassword: false,
+  });
+
+  const handelCheck = (prop) => (event) => {
+    setCheck({ ...check, [prop]: event.target.value });
+  };
+
+  const handelCheckPassword = () => {
+    setCheck({ ...check, showPassword: !check.showPassword });
+  };
+
+  const handelCheckMouse = (event) => {
     event.preventDefault();
   };
 
@@ -61,7 +84,7 @@ const Email = () => {
             />
             <p>Choose password</p>
 
-            <FormControl className="username" variant="outlined" margin="dense">
+            <FormControl className="username mt-0 mb-3" variant="outlined" margin="dense" id = '2'>
               <OutlinedInput
                 type={values.showPassword ? "text" : "password"}
                 value={values.password}
@@ -81,6 +104,31 @@ const Email = () => {
                 labelWidth={70}
               />
             </FormControl>
+            <p>Check password</p>
+            <FormControl className="username mb-3" variant="outlined" margin="dense" id='1'>
+              <OutlinedInput
+                type={check.showPassword ? "text" : "password"}
+                value={check.password}
+                onChange={handelCheck("password")}
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handelCheckPassword}
+                      onMouseDown={handelCheckMouse}
+                      edge="end"
+                    >
+                      {check.showPassword ? <Visibility /> : <VisibilityOff />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+                labelWidth={70}
+              />
+            </FormControl>
+
+               
+
+
             <div className="service">
               <p>
                 By creating an account, you agree to our{" "}
@@ -93,14 +141,15 @@ const Email = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 col-sm-12 row-2">
-            <div className="line-fle">
+            <div className="line-fil">
               <div className="line"></div>
               <p className="or">OR</p>
               <div className="line"></div>
             </div>
+           <div className="other">
             <div className="google">
               <a href="#" className="circle">
-               <i class="fa fa-google" aria-hidden="true"></i>
+              <FcGoogle />
               </a>
               <a href="#" className="text-Appl">
                 Continue with Google
@@ -108,12 +157,13 @@ const Email = () => {
             </div>
             <div className="appl">
               <a href="#" className="circle-appl">
-                <AppleIcon />
+               < AppleIcon />
               </a>
               <a href="#" className="text-google">
                 Contiue with Apple
               </a>
             </div>
+           </div>
             <div className="text-last">
               <p className="paragraph pt-0">
                 if you continue with Google or Apple and don't already have a
@@ -124,9 +174,10 @@ const Email = () => {
                 </a>
               </p>
             </div>
+            
           </div>
         </div>
-
+       
       </div>
     </div>
   );
