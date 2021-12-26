@@ -6,7 +6,6 @@ import Email from './Commponent/Email';
 function App() {
 
 
-
   return (
     <div>
       <Email/>
