@@ -1,10 +1,16 @@
+
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom"; 
 import "./App.css";
 import Email from "./Commponent/Email";
+import Logo from "./Commponent/Logo";
+import Login from "./Login";
 import Password from "./Commponent/Password";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
+ 
+  
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
@@ -15,7 +21,7 @@ function App() {
       const response = await fetch(url);
       const tours = await response.json();
       setLoading(false);
-      setTours(tours);
+      setTours(false);
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -29,16 +35,20 @@ function App() {
   if (loading) {
     return (
       <main>
-        <Password />{" "}
+        <Logo />{" "}
       </main>
     );
   }
+  
 
   return (
-    <div>
-      <Email tours={tours} />
-    </div>
+  <div>
+    <Email />
+  </div>
   );
 }
 
-export default App;
+export default App
+
+
+

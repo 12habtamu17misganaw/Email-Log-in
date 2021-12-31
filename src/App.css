@@ -1,469 +1,1490 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pushster&family=Satisfy&display=swap');
-.center {
-   max-width: 100%;
-   height: 500px;
-    
-    background-color: white;
-   
-    padding-top: 350px;
-    padding-left: 47%;
-    
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Oleo+Script:wght@400;700&family=Pushster&family=Satisfy&family=Vujahday+Script&display=swap");
+/* for password  */
+.titel-password h1 {
+  font-size: 40px;
+  text-align: center;
 }
-.center h1{
-   border: 4px solid rgb(170, 170, 170);
-    
-border-radius: 50%;
-   height: 113px;
-   width: 110px;
-   font-family:  'Oleo Script', cursive;
-      color: rgb(170, 170, 170);
-   font-size: 110px;
-   
-   
+.login-center a {
+  text-decoration: none;
+}
+.login-center .password-center-a p {
+  margin-left: 36%;
+  text-decoration: none;
+  text-align: start;
+  color: rgb(24, 131, 202);
+  font-size: 13px;
+  font-weight: 600;
+}
+.login-center .Password p {
+  text-align: start;
+  margin-left: 36%;
+  font-size: 13px;
+  font-weight: 600;
+}
+.username-password {
+  width: 450px;
+}
+.service .password-center-by {
+  margin-left: 36%;
+  text-align: start;
+}
+.login-center .password-login .password-second-button {
+  width: 450px;
+  padding: 13px 0;
+
+  background-color: rgb(0, 122, 204);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
-.logo{
-    font-size: 25px;
-    
-    border: 2px solid black;
-    border-radius: 50px 50px;
-    font-family: 'Oleo Script', cursive;
-    font-weight: bold;
-
-height: 29px;
-width: 29px;
-
+.password-account {
+  margin-top: 40px;
 }
-.Logo{
-    
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 22px;
-    height: 22px;
-    
+.password-account .password-button {
+  width: 450px;
+  height: 50px;
+  background-color: white;
+  border-color: rgba(212, 212, 212, 0.829);
+  border-bottom-color: rgb(255, 255, 255);
+}
+.password-account .password-button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* end pasword */
+.last-world {
+  margin-left: 37%;
+  margin-bottom: 100px;
+}
+.last-world p {
+  font-family: Mongolian Baiti;
+  font-weight: 100;
+}
+.last-world p a {
+  text-decoration: none;
+}
+
+.lost-log {
+  margin-top: 30px;
+  margin-left: 46%;
+}
+.lost-log-p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.lost-log a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+}
+.lost-log a :hover {
+  color: rgb(10, 187, 241);
+}
+.one-line {
+  border-top: 2px solid rgb(192, 188, 188);
+  width: 450px;
+
+  margin-left: 37%;
+}
+.Email-me-log {
+  text-align: center;
+  margin-top: 20px;
+}
+.Email-me-log a {
+  text-decoration: none;
+}
+.Email-me-log a p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Email-me-log a p:hover {
+  color: rgb(10, 187, 241);
+}
+.creat-account {
+  margin-top: 40px;
+}
+.creat-account .creat-button {
+  width: 450px;
+  height: 50px;
+  background-color: white;
+  border-color: rgba(212, 212, 212, 0.829);
+  border-bottom-color: rgb(255, 255, 255);
+}
+.creat-account .creat-button a {
+  text-decoration: none;
+  color: black;
+}
+.text-last .paragraph-log {
+  width: 445px;
+  margin-left: 34%;
+  font-size: 13.5px;
+  font-weight: normal;
+  color: rgb(58, 58, 58);
+
+  text-align: start;
+}
+.text-last .paragraph-log a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  border-bottom: 1px solid black;
+}
+
+.appl-log {
+  margin-left: 0px;
+
+  margin-top: 40px;
+}
+.circle-log {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 50% 50%;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 1px 1px rgb(221, 219, 219);
+  font-size: 25px;
+}
+.google-log {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.line-file-log {
+  display: flex;
+  margin-left: 37%;
+  margin-top: 40px;
+}
+.line-log {
+  border-top: 1px solid rgb(230, 230, 230);
+  width: 210px;
+}
+.or-log {
+  margin-top: -10px;
+  font-weight: lighter;
+
+  color: rgb(230, 230, 230);
+}
+
+.titel-log {
+  margin-top: 60px;
+  text-align: center;
+}
+.titel-log h1 {
+  font-size: 47px;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+}
+.login-center {
+  text-align: center;
+  margin-top: 25px;
+}
+.login-center-p {
+  text-align: start;
+  margin-left: 36%;
+}
+
+.login-center-by {
+  text-align: start;
+  margin-left: 37%;
+}
+.service .p-1 {
+  text-align: start;
+  margin-left: 36%;
+}
+.username-log {
+  width: 450px;
+}
+.login-center p {
+  color: rgb(109, 109, 109);
+  font-size: 16px;
+  font-weight: bold;
+}
+.button-login {
+  margin-top: 50px;
+}
+.button-login .login-first-button {
+  width: 450px;
+  padding: 13px 0;
+
+  background-color: rgb(0, 122, 204);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.button-login .login-first-button :hover {
+  color: rgb(14, 23, 102);
+}
+.search {
+  height: 500px;
+
+  padding-top: 350px;
+  padding-left: 47%;
+}
+.border-aza .search-log {
+  border: 4px solid rgb(170, 170, 170);
+
+  border-radius: 50%;
+  height: 113px;
+  width: 110px;
+  font-family: "Oleo Script", cursive;
+  color: rgb(170, 170, 170);
+  font-size: 110px;
+}
+
+.logo {
+  font-size: 25px;
+
+  border: 2px solid black;
+  border-radius: 50px 50px;
+  font-family: "Oleo Script", cursive;
+  font-weight: bold;
+
+  height: 29px;
+  width: 29px;
+}
+.Logo {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 22px;
+  height: 22px;
 }
 .titel {
-    text-align: center;
-    margin-top: 30px;
-    
-    
-    
-     
+  text-align: center;
+  margin-top: 30px;
 }
 .titel h1 {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
 }
 .titel p {
-    font-size: 18px;
-    color: rgb(71, 71, 71);
-    font-weight: normal;
-    
-    
+  font-size: 18px;
+  color: rgb(71, 71, 71);
+  font-weight: normal;
 }
 .titel p a {
-    text-decoration:none;
-    border-bottom: 1px solid black;
-    color: rgb(116, 114, 114);
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: rgb(116, 114, 114);
 }
-.username{
-    
-   
-    margin: 10px 0px;
-    width: 400px;
-   border-right: 1px solid black;
-    
+.username {
+  margin: 10px 0px;
+  width: 400px;
+  border-right: 1px solid black;
 }
 .row-1 {
-    margin-top: 30px;
-    margin-left: 100px;
+  margin-top: 30px;
+  margin-left: 100px;
 }
 .row-1 p {
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
 }
 .service p {
-    color: rgb(122, 122, 122);
-font-size: 14px;
-    font-weight: normal;
-    
+  color: rgb(122, 122, 122);
+  font-size: 14px;
+  font-weight: normal;
 }
 .service p a {
-    text-decoration: none;
-    color: rgb(122, 122, 122);
-    border-bottom: 1px solid rgb(122, 122, 122);
+  text-decoration: none;
+  color: rgb(122, 122, 122);
+  border-bottom: 1px solid rgb(122, 122, 122);
 }
-.button {
-    margin-top: 30px;
+.button-1 {
+  margin-top: 30px;
 }
-.button button {
-    width: 400px;
-    padding: 9px 0;
-    
-    background-color: rgb(35, 112, 255);
-    color: white;
-    border: none;
-    
+.button-1 .button-1 {
+  width: 400px;
+  padding: 9px 0;
+
+  background-color: rgb(35, 112, 255);
+  color: white;
+  border: none;
 }
 
-.button :hover {
-    background-color: rgb(56, 56, 236);
+.button-1 :hover {
+  background-color: rgb(56, 56, 236);
 }
 .row-2 {
-    margin: 15px 50px;
-    
+  margin: 15px 50px;
 }
 .or {
-    margin-left: -8px;
-    
+  margin-left: -8px;
 }
-.line{
-  border-left: 1px solid rgb(230, 230, 230); 
-  
+.line {
+  border-left: 1px solid rgb(230, 230, 230);
+
   height: 200px;
- 
- 
 }
 
 .google {
-    margin-top: -330px;
-    margin-left: 50px;
-    display: flex;
-   
+  margin-top: -330px;
+  margin-left: 50px;
+  display: flex;
 }
 .appl {
-    margin-left: 50px;
-    margin-top: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 .circle {
-    border: 1px solid rgb(194, 194, 194);
-    border-radius: 50% 50%;
-    padding: 6px 12px;
-    color: black;
-    text-decoration: none;
-    box-shadow: 1px 1px  rgb(221, 219, 219);
-    font-size: 25px;
-    
-    
-    
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 50% 50%;
+  padding: 6px 12px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 1px 1px rgb(221, 219, 219);
+  font-size: 25px;
 }
- 
-.circle-appl {
-    border: 1px solid rgb(194, 194, 194);
-    border-radius: 50% 50%;
-    padding: 13px 13px;
-    color: black;
-    
 
-    box-shadow: 1px 1px  rgb(221, 219, 219);
+.circle-appl {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 50% 50%;
+  padding: 13px 13px;
+  color: black;
+
+  box-shadow: 1px 1px rgb(221, 219, 219);
 }
 .text-google {
-    text-decoration: none;
-    margin-left: 10px;
-    color: rgb(99, 99, 99);
-    font-size: 15px;
-    
-    
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(99, 99, 99);
+  font-size: 15px;
 }
 .text-Appl {
-    text-decoration: none;
-    margin-left: 10px;
-    color: rgb(99, 99, 99);
-    font-size: 15px;
-    margin-top: 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(99, 99, 99);
+  font-size: 15px;
+  margin-top: 10px;
 }
 .text-google :hover {
-color: rgb(99, 99, 99);
+  color: rgb(99, 99, 99);
 }
 .text-last {
-    margin-left: 50px;
-    margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
-.text-last .paragraph{
-    font-size: 13px;
-    font-weight:normal;
-    color: rgb(145, 143, 143);
-    width: 400px;
-    
-    
+.text-last .paragraph {
+  font-size: 13px;
+  font-weight: normal;
+  color: rgb(145, 143, 143);
+  width: 400px;
 }
 .text-last .paragraph .last-link {
-    text-decoration: none;
-    color: rgb(145, 143, 143) ;
-    border-bottom: 1px solid rgb(110, 110, 110);
+  text-decoration: none;
+  color: rgb(145, 143, 143);
+  border-bottom: 1px solid rgb(110, 110, 110);
 }
 
-/* for <1200 */
+/* for Emaill <1200 */
 @media only screen and (max-width: 1200px) {
-
-.row-1 {
+  .row-1 {
     margin-left: 0px;
-}
-.username{
-    
-   
+  }
+  .username {
     margin: 10px 0px;
     width: 350px;
-   border-right: 1px solid black;
-    
-}
-.button button {
+    border-right: 1px solid black;
+  }
+  .button-1 .button-1 {
     width: 350px;
     padding: 9px 0;
     border-radius: 10px;
     background-color: rgb(35, 112, 255);
     color: white;
     border: none;
-    
-}
-
-
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-.row-1 {
+  .row-1 {
     margin-left: 0px;
-}
-
+  }
 }
 @media only screen and (max-width: 1000px) {
-  
-    .titel h1 {
-        font-size: 45px;
-    }
-    .titel p {
-        font-size: 18px;
-    }
-    .line{
-        border-top: 1px solid rgb(230, 230, 230); 
-        
-        width: 300px;
-        height: 0px;
-      
-        
-      }
-      .appl {
-          width: 500px;
-      }
-      .line-fil {
-        display: flex;
-        margin-left: -0px;
-        width: 600px;
-       
-    }
-    .google {
-        margin-top: 50px;
-        width: 500px;
-    }
-    .or {
-        margin-left: 0px;
-        margin-top: -9px;
-    }
-    .other {
-        margin-left: 120px;
-    }
-    .row-1 {
-        margin:30px auto;
-    }
-    .text-last .paragraph {
-        text-align: center;
-    }
+  .titel h1 {
+    font-size: 45px;
+  }
+  .titel p {
+    font-size: 18px;
+  }
+  .line {
+    border-top: 1px solid rgb(230, 230, 230);
+
+    width: 300px;
+    height: 0px;
+  }
+  .appl {
+    width: 500px;
+  }
+  .line-fil {
+    display: flex;
+    margin-left: -0px;
+    width: 600px;
+  }
+  .google {
+    margin-top: 50px;
+    width: 500px;
+  }
+  .or {
+    margin-left: 0px;
+    margin-top: -9px;
+  }
+  .other {
+    margin-left: 120px;
+  }
+  .row-1 {
+    margin: 30px auto;
+  }
+  .text-last .paragraph {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-   
-    .row-1 {
-        margin-left: -10px;
-    }
-    
-    .username {
-        width: 300px;
-    }
-    .button button {
-        width: 300px;
-    }
-    .line{
-        border-top: 1px solid rgb(230, 230, 230); 
-        
-        width: 230px;
-        height: 0px;
-        
-      }
-      .line-fil {
-        display: flex;
-        margin-left: -50px;
-    }
-    .google {
-        margin-top: 0px;
-    }
-    .or {
-        margin-left: 0px;
-        margin-top: -9px;
-    }
-    .other {
-        margin-left: -120px;
-    }
-    .text-last .paragraph {
+  .row-1 {
+    margin-left: -10px;
+  }
+
+  .username {
+    width: 300px;
+  }
+  .button-1 .button-1 {
+    width: 300px;
+  }
+  .line {
+    border-top: 1px solid rgb(230, 230, 230);
+
+    width: 230px;
+    height: 0px;
+  }
+  .line-fil {
+    display: flex;
+    margin-left: -50px;
+  }
+  .google {
+    margin-top: 0px;
+  }
+  .or {
+    margin-left: 0px;
+    margin-top: -9px;
+  }
+  .other {
     margin-left: -120px;
-      font-size: 13px;
+  }
+  .text-last .paragraph {
+    margin-left: -120px;
+    font-size: 13px;
     height: 10px;
     width: 100%;
-    
-    }
-    .text-last {
-        width: 100%;
-    }
-    .titel p {
-        margin-left: 30px;
-    }
+  }
+  .text-last {
+    width: 100%;
+  }
+  .titel p {
+    margin-left: 30px;
+  }
 }
-    
-    @media only screen and (max-width: 500px) {
 
-       .center {
-           padding-left:150px ;
-       }
-       .center h1 {
-           font-size: 80px;
-            width: 82px;
-            height: 82px;
-       }
-        .row-1 {
-            margin-left: 0px;
-        }
-       
-        .username {
-            width: 350px;
-        }
-        .button button {
-            width: 350px;
-        }
-        .service p {
-            width: 370px;
-        }
-        .line{
-            border-top: 1px solid rgb(230, 230, 230); 
-            
-            width: 230px;
-            height: 0px;
-            
-          }
-          .line-fil {
-            display: flex;
-            margin-left: -50px;
-        }
-        .google {
-            margin-top: 0px;
-        }
-        .or {
-            margin-left: 0px;
-            margin-top: -9px;
-        }
-        .other {
-            margin-left: -100px;
-        }
-        .text-last .paragraph {
-        margin-right: 0px;
-          font-size: 12px;
-        height: 10px;
-        width: 400px;
-        margin-bottom: 100px;
-        padding-left: 8px;
-        
-        
-        }
-        
-        .titel p a {
-            text-decoration:none;
-            border-bottom: 1px solid black;
-            color: rgb(116, 114, 114);
-        }
-        .titel h1 {
-            font-size: 36px;
-           margin-left: 50px;
-        }
-        .titel p {
-            width: 350px;
-            margin-top: 20px;
-            font-size: 17px;
-            margin-left: 30px;
-            
-        }
-       
-    }
+@media only screen and (max-width: 500px) {
+  .center {
+    padding-left: 150px;
+  }
+  .center h1 {
+    font-size: 80px;
+    width: 82px;
+    height: 82px;
+  }
+  .row-1 {
+    margin-left: 0px;
+  }
 
-    @media only screen and (max-width: 400px) {
-        .text-last .paragraph {
-            width: 300px;
-            text-align: start;
-        }
-        .titel p {
-           max-width: 300px;
-            margin-left: 50px;
+  .username {
+    width: 350px;
+  }
+  .button-1 .button-1 {
+    width: 350px;
+  }
+  .service p {
+    width: 370px;
+  }
+  .line {
+    border-top: 1px solid rgb(230, 230, 230);
 
-        }
-        .service p {
-            width: 300px;
-        }
-        .username {
-            width: 330px;
-        }
-        .button button {
-            width: 330px;
-        }
-        
+    width: 230px;
+    height: 0px;
+  }
+  .line-fil {
+    display: flex;
+    margin-left: -50px;
+  }
+  .google {
+    margin-top: 0px;
+  }
+  .or {
+    margin-left: 0px;
+    margin-top: -9px;
+  }
+  .other {
+    margin-left: -100px;
+  }
+  .text-last .paragraph {
+    margin-right: 0px;
+    font-size: 12px;
+    height: 10px;
+    width: 400px;
+    margin-bottom: 100px;
+    padding-left: 8px;
+  }
 
-    }
-   
+  .titel p a {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: rgb(116, 114, 114);
+  }
+  .titel h1 {
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .titel p {
+    width: 350px;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-left: 30px;
+  }
+}
 
-    @media only screen and (max-width: 370px) {
-     .username {
-         width:100%;
-         
-     }
-     .button button {
-         width: 100%;
-     }
-     .titel p {
-         margin-left: 20px;
 
-        
-     }
-    }
-    @media only screen and (max-width: 350px) {
-        .titel p {
-            width: 200px;
-            margin: 20px auto;
-        }
-        .service p {
-            width: 270px;
-        }
-        .line {
-            width: 140px;
-        }
-        .or {
-            margin-left: -10px;
-        }
-        .text-last .paragraph {
-            width: 280px;
-        }
-    }
+@media only screen and (max-width: 400px) {
+  .text-last .paragraph {
+    width: 300px;
+    text-align: start;
+  }
+  .titel p {
+    max-width: 300px;
+    margin-left: 50px;
+  }
+  .service p {
+    width: 300px;
+  }
+  .username {
+    width: 330px;
+  }
+  .button-1 .button-1 {
+    width: 330px;
+  }
+  .row-2 .line-fil .line {
+    width: 150px;
+  }
+}
 
-    @media only screen and (max-width: 270px) {
+@media only screen and (max-width: 370px) {
+  
+  .username {
+    width: 300px;
+  }
+  .button-1 .button-1 {
+    width: 300px;
+  }
+  .titel p {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .titel p {
+    width: 200px;
+    margin: 20px auto;
+  }
+  .service p {
+    width: 270px;
+  }
+  .line {
+    width: 140px;
+  }
+  .or {
+    margin-left: -10px;
+  }
+  .text-last .paragraph {
+    width: 280px;
+  }
+}
 
-        .center {
-            padding-left: 80px;
-        }
-        .titel p {
-            width: 150px;
-        }
-        .service p {
-            width: 200px;
-        }
-        .text-last .paragraph {
-            width: 220px;
-        }
-    }
+@media only screen and (max-width: 270px) {
+  .center {
+    padding-left: 80px;
+  }
+  .titel p {
+    width: 150px;
+  }
+  .service p {
+    width: 200px;
+  }
+  .text-last .paragraph {
+    width: 220px;
+  }
+}
+
+/* for Login mobil */
+@media only screen and (max-width: 1200px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 31%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 31%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 27%;
+  }
+  .one-line {
+    margin-left: 30%;
+  }
+  .line-file-log {
+    margin-left: 31%;
+  }
+  .lost-log {
+    margin-left: 44%;
+  }
+  .last-world {
+    margin-left: 33%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 20%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 20%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 15%;
+  }
+  .one-line {
+    margin-left: 20%;
+  }
+  .line-file-log {
+    margin-left: 20%;
+  }
+  .lost-log {
+    margin-left: 39%;
+  }
+  .last-world {
+    margin-left: 23%;
+  }
+
+  .other-logo {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 10%;
+  }
+  
+  .service .p-1 {
+    text-align: start;
+    margin-left: 10%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 2%;
+  }
+  .one-line {
+    margin-left: 10%;
+    width: 400px;
+  }
+  .line-file-log {
+    margin-left: 10%;
+  }
+  .lost-log {
+    margin-left: 35%;
+  }
+  .line-file-log .line-log {
+    width: 200px;
+  }
+  .last-world {
+    margin-left: 15%;
+  }
+
+  .other-logo {
+    margin-left: -200px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 6%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 6%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -5px;
+    font-size: 13px;
+  }
+  .one-line {
+    margin-left: 2%;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    margin-left: 8%;
+    text-align: center;
+  }
+
+  .other-logo {
+    margin-left: -200px;
+  }
+  .username-log {
+    width: 420px;
+  }
+  .button-login .login-first-button {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .login-center .login-center-p{
+    text-align: start;
+    margin-left: 5%;
+  }
+  .line-file-log .line-log {
+    width: 190px;
+  }
+  .one-line {
+    margin-left: 10%;
+    width: 380px;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13.5px;
+    width: 100%;
+  }
+  .one-line {
+    margin-left: 2%;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    margin-left: 8%;
+    text-align: center;
+    font-size: 13.9px;
+    width: 320px;
+  }
+
+  .other-logo {
+    margin-left: -180px;
+  }
+  .username-log {
+    width: 100%;
+  }
+  .user-logo-div {
+    margin-left: 20px;
+  }
+  .button-login .login-first-button {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .titel-log h1 {
+    font-size: 36px;
+    text-align: start;
+    margin-left: 10px;
+  }
+  .creat-account .creat-button {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 3%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 3%;
+    width: 99%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13px;
+    width: 95%;
+  }
+  .password-login .one-line {
+    margin-left: 2%;
+    width: 300px;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .line-file-log .line-log {
+    width: 150px;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    margin-left: 8%;
+    text-align: center;
+    font-size: 13.9px;
+    width: 300px;
+  }
+
+  .other-logo {
+    margin-left: -150px;
+  }
+  .username-log {
+    width: 95%;
+  }
+  .button-login .login-first-button {
+    width: 95%;
+  }
+  .titel-log h1 {
+    font-size: 36px;
+    text-align: start;
+    margin-left: 10px;
+  }
+  .creat-account .creat-button {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .login-center .login-center-p{
+    text-align: start;
+    margin-left: 3%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 3%;
+    width: 100%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13px;
+    width: 95%;
+  }
+  .one-line {
+    margin-left: 2%;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    margin-left: 8%;
+    text-align: center;
+    font-size: 13.9px;
+    width: 300px;
+  }
+
+  .other-logo {
+    margin-left: -95px;
+  }
+  .username-log {
+    width: 95%;
+    text-align: center;
+  }
+  .button-login .login-first-button {
+    width: 92%;
+  }
+  .titel-log h1 {
+    font-size: 38px;
+    text-align: start;
+    margin-left: 20px;
+    width: 250px;
+  }
+  .creat-account .creat-button {
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .login-center .login-center-p {
+    text-align: start;
+    margin-left: 6%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 6%;
+    width: 70%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13px;
+    width: 95%;
+  }
+  .one-line {
+    margin-left: 2%;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    margin-left: 8%;
+    text-align: center;
+    font-size: 13.9px;
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  .other-logo {
+    margin-left: -70px;
+  }
+  .username-log {
+    width: 88%;
+  }
+  .button-login .login-first-button {
+    width: 88%;
+  }
+  .titel-log h1 {
+    font-size: 38px;
+    text-align: start;
+    margin-left: 20px;
+    width: 250px;
+  }
+  .creat-account .creat-button {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .login-center .login-center-p{
+    text-align: start;
+    margin-left: 6%;
+  }
+  .login-center .service .p-1 {
+    text-align: start;
+    margin-left: 6%;
+    width: 220px;
+  }
+.first-div .login-center .button-login .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13px;
+    width: 270px;
+  }
+ .first-div .one-line {
+    margin-left: 10px;
+    width: 260px;
+    text-align: center;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+.first-div .button-login .line-file-log .line-log {
+ width: 130px;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .first-div .last-world {
+    margin-left: 8%;
+    text-align: center;
+    font-size: 13.9px;
+    width: 250px;
+    margin-left: 0px;
+  }
+
+  .button-login .other-logo {
+    margin-left: 0px;
+  }
+  .first-div .login-center .username-log {
+    width: 250px;
+  }
+ .first-div .login-center .button-login .login-first-button {
+    width: 250px;
+  }
+  .titel-log {
+    margin-left: 10px;
+  }
+
+  .titel-log .titel-log-h1 {
+    width: 230px;
+  }
+.login-center .button-login .creat-account .creat-button {
+   width: 250px;
+  }
+}
+
+/* for 411*731 mobile */
+@media only screen and (max-width: 414px) {
+  .last-world p {
+    font-size: 15.5px;
+    margin-left: 60px;
+  }
+  .login-center .login-center-p{
+    font-weight: 600;
+  }
+  .user-logo-div {
+    margin-left: 0px;
+  }
+  .login-center .username-log {
+    width: 360px;
+  }
+  .login-center .button-login .login-first-button {
+    width: 360px;
+    margin-left: 0px;
+  }
+  .login-center .creat-account .creat-button {
+    width: 360px;
+    margin-left: 0px;
+  }
+  .one-line {
+    width: 380px;
+  }
+  .button-login .text-last .paragraph-log {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .login-center .login-center-p{
+    text-align: start;
+    margin-left: 10%;
+  }
+  .service .p-1 {
+    text-align: start;
+    margin-left: 10px;
+    width: 330px;
+  }
+  .button-login .text-last .paragraph-log {
+    margin-left: -22px;
+    font-size: 13px;
+    width: 330px;
+  }
+  .one-line {
+    margin-left: 2%;
+    width: 330px;
+  }
+  .line-file-log {
+    margin-left: 2%;
+  }
+  .lost-log {
+    margin-left: 32%;
+  }
+  .last-world {
+    text-align: center;
+    font-size: 13.9px;
+    width: 350px;
+    margin-left: 0px;
+  }
+
+  .other-logo {
+    margin-left: -130px;
+  }
+  .login-center .username-log {
+    width: 300px;
+  }
+  .user-logo-div {
+    margin-left: 3px;
+  }
+  .login-center .button-login .login-first-button {
+    width: 300px;
+    margin-left: 3px;
+  }
+  .titel-log h1 {
+    font-size: 36px;
+    text-align: start;
+    margin-left: 20px;
+    width: 330px;
+  }
+  .button-login .creat-account .creat-button {
+    width: 300px;
+    margin-left: 0px;
+  }
+  .line-file-log .line-log {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .last-world p {
+    font-size: 15.5px;
+  }
+  .login-center .login-center-p {
+    font-weight: 600;
+  }
+  .user-logo-div {
+    margin-left: 20px;
+  }
+  .login-center .username-log {
+    width: 310px;
+  }
+  .login-center .button-login .login-first-button {
+    width: 310px;
+    margin-left: 20px;
+  }
+  .creat-account {
+    margin-left: 10px;
+  }
+  .login-center .creat-account .creat-button {
+    width: 310px;
+    margin-left: 10px;
+  }
+  .one-line {
+    width: 300px;
+  }
+  .button-login .text-last .paragraph-log {
+    width: 300px;
+  }
+  .titel-log .titel-log-h1 {
+    width: 320px;
+  }
+  .login-center .password-center-a {
+    margin-left: 20px;
+  }
+  .service .p-1 {
+    margin-left: 15px;
+  }
+  .other-logo {
+    margin-left: -50px;
+  }
+  .last-world {
+    margin-left: -40px;
+  }
+}
+/* for password */
+@media only screen and (max-width: 1500px) {
+  .login-center .password-center-a p {
+    margin-left: 33%;
+  }
+  .login-center .Password p {
+    margin-left: 33%;
+  }
+  .service .password-center-by {
+    margin-left: 33%;
+  }
+  .line-file-log {
+    margin-left: 33%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-center .password-center-a p {
+    margin-left: 30%;
+  }
+  .login-center .Password p {
+    margin-left: 31%;
+  }
+  .service .password-center-by {
+    margin-left: 30.5%;
+  }
+  .line-file-log {
+    margin-left: 30.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 28%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .login-center .password-center-a p {
+    margin-left: 27%;
+  }
+  .login-center .Password p {
+    margin-left: 28%;
+  }
+  .service .password-center-by {
+    margin-left: 28.5%;
+  }
+  .line-file-log {
+    margin-left: 28.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 26%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login-center .password-center-a p {
+    margin-left: 26%;
+  }
+  .login-center .Password p {
+    margin-left: 26%;
+  }
+  .service .password-center-by {
+    margin-left: 26.5%;
+  }
+  .line-file-log {
+    margin-left: 26.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 24%;
+  }
+  .user-password-div .username-password {
+    width: 400px;
+  }
+  .login-center .password-login .password-second-button {
+    width: 400px;
+  }
+  .password-account .password-button {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-center .password-center-a p {
+    margin-left: 20%;
+  }
+  .login-center .Password p {
+    margin-left: 20%;
+  }
+  .service .password-center-by {
+    margin-left: 20.5%;
+  }
+  .line-file-log {
+    margin-left: 20.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-center .password-center-a p {
+    margin-left: 13%;
+  }
+  .login-center .Password p {
+    margin-left: 13%;
+  }
+  .service .password-center-by {
+    margin-left: 13.5%;
+  }
+  .line-file-log {
+    margin-left: 10.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: 6%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login-center .password-center-a p {
+    margin-left: 8%;
+  }
+  .login-center .Password p {
+    margin-left: 9%;
+  }
+  .service .password-center-by {
+    margin-left: 9.5%;
+  }
+  .line-file-log {
+    margin-left: 7.5%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -2%;
+  }
+  .google-log .circle-log {
+    padding: 5px 8px;
+  }
+  .appl-log .circle-appl {
+    padding: 12px 10px;
+  }
+  .password-login .google-log {
+    margin-left: -60px;
+  }
+  .password-login .appl-log {
+    margin-left: -90px;
+  }
+  .password-login .google-log .circle-log {
+    padding: 5px 9px;
+  }
+  .password-login .appl-log .circle-appl {
+    padding: 12px 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .login-center .password-center-a p {
+    margin-left: 6%;
+  }
+  .login-center .Password p {
+    margin-left: 6%;
+  }
+  .service .password-center-by {
+    margin-left: 6.5%;
+  }
+  .line-file-log {
+    margin-left: 0%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -35px;
+    width: 420px;
+  }
+  .user-password-div .username-password {
+    width: 370px;
+  }
+  .login-center .password-login .password-second-button {
+    width: 370px;
+  }
+  .password-account .password-button {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .login-center .password-center-a p {
+    margin-left: 5%;
+  }
+  .login-center .Password p {
+    margin-left: 5%;
+  }
+  .service .password-center-by {
+    margin-left: 5.5%;
+  }
+  .line-file-log {
+    margin-left: 0%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -35px;
+    width: 380px;
+  }
+  .user-password-div .username-password {
+    width: 330px;
+  }
+  .login-center .password-login .password-second-button {
+    width: 330px;
+  }
+  .password-account .password-button {
+    width: 330px;
+  }
+  .password-login .google-log {
+    margin-left: -20px;
+  }
+  .password-login .appl-log {
+    margin-left: -40px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login-center .password-center-a p {
+    margin-left: 2%;
+  }
+  .login-center .Password p {
+    margin-left: 5%;
+  }
+  .service .password-center-by {
+    margin-left: 3.5%;
+  }
+  .line-file-log {
+    margin-left: 0%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -35px;
+    width: 300px;
+  }
+  .user-password-div .username-password {
+    width: 300px;
+  }
+  .login-center .password-login .password-second-button {
+    width: 300px;
+  }
+  .password-account .password-button {
+    width: 300px;
+  }
+  .password-login .google-log {
+    margin-left: 15px;
+  }
+  .password-login .appl-log {
+    margin-left: -10px;
+  }
+  .password-login .one-line {
+    width: 300px;
+  }
+  .password-login .line-file-log .line-log {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .login-center .password-center-a p {
+    margin-left: 2%;
+  }
+  .login-center .Password p {
+    margin-left: 5%;
+  }
+  .service .password-center-by {
+    margin-left: 3.5%;
+  }
+  .line-file-log {
+    margin-left: 0%;
+  }
+  .text-last .paragraph-log {
+    margin-left: -35px;
+    width: 250px;
+  }
+  .user-password-div .username-password {
+    width: 250px;
+  }
+  .login-center .password-login .password-second-button {
+    width: 250px;
+  }
+  .password-account .password-button {
+    width: 250px;
+  }
+  .password-login .google-log {
+    margin-left: 50px;
+  }
+  .password-login .appl-log {
+    margin-left: 30px;
+  }
+  .password-login .one-line {
+    width: 250px;
+  }
+  .password-login .line-file-log .line-log {
+    width: 120px;
+  }
+}
+
+/* for Logo */
+@media only screen and (max-width: 800px) {
+.search {
+  height: 500px;
+
+  padding-top: 300px;
+  padding-left: 42%;
+}
+.border-aza .search-log {
+  border: 4px solid rgb(170, 170, 170);
+
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  font-family: "Oleo Script", cursive;
+  color: rgb(170, 170, 170);
+  font-size: 70px;
+}
+}
+@media only screen and (max-width: 400px) {
+  .search {
+    height: 500px;
+  
+    padding-top: 260px;
+    padding-left: 38%;
+  }
+  .border-aza .search-log {
+    border: 4px solid rgb(170, 170, 170);
+  
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    font-family: "Oleo Script", cursive;
+    color: rgb(170, 170, 170);
+    font-size: 60px;
+  }
+  }

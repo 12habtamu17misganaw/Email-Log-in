@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import TextField from "@material-ui/core/TextField";
 import IconButton from "@material-ui/core/IconButton";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
@@ -8,9 +8,13 @@ import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import AppleIcon from '@material-ui/icons/Apple';
 import {FcGoogle} from "react-icons/fc"
+import Login from "../Login";
+
+
 
 
 const Email = () => {
+  const[text,setText] = useState({Login})
   const [values, setValues] = React.useState({
     amount: "",
     password: "",
@@ -51,6 +55,14 @@ const Email = () => {
   const handelCheckMouse = (event) => {
     event.preventDefault();
   };
+  const handelClick = () => {
+    if (text === {Login}) {
+      setText({Login})
+    } else {
+      setText ({Login})
+    }
+
+  }
 
   return (
     <div>
@@ -70,6 +82,7 @@ const Email = () => {
           <div className="col-lg-4 col-md-6 col-sm-12 row-1">
             <p>Your email address</p>
             <TextField
+             
               type="email"
               margin="dense"
               variant="outlined"
@@ -135,8 +148,8 @@ const Email = () => {
                 <a href="#">Terms of service</a>
               </p>
             </div>
-            <div className="button">
-              <button>Create Your Account</button>
+            <div className="button-1">
+              <button className="button-1">Create Your Account</button>
             </div>
           </div>
 
@@ -179,6 +192,7 @@ const Email = () => {
         </div>
        
       </div>
+      
     </div>
   );
 };
