@@ -63,7 +63,7 @@ const Password = () => {
         <h1 className="titel-log-h1">Log in to your account</h1>
       </div>
       <div className="login-center">
-        <a href="#" className="password-center-a">
+        <a href="login" className="password-center-a">
           <p className="mb-2">
             {" "}
             <ArrowBackIcon /> Change Username
@@ -144,9 +144,11 @@ const Password = () => {
         </div>
 
         <div className="password-login">
+        
           <button  className="password-second-button">
             Log in
           </button>
+        
 
           <div className="line-file-log">
             <div className="line-log"></div>

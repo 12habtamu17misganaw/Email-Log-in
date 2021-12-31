@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom"; 
+import { BrowserRouter, BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom"; 
 import "./App.css";
 import Email from "./Commponent/Email";
 import Logo from "./Commponent/Logo";
@@ -42,9 +42,13 @@ function App() {
   
 
   return (
-  <div>
-    <Email />
-  </div>
+ <BrowserRouter>
+ <Routes>
+   <Route path='/' element={<Email />} />
+    <Route path='/login' element={<Login />} />
+    <Route path='/password' element={<Password />} />
+    </Routes>
+ </BrowserRouter>
   );
 }
 

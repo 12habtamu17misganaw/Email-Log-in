@@ -31,9 +31,11 @@ const Login = () => {
         </div>
 
         <div className="button-login">
+          <div className="hover-log">
           <button  className="login-first-button">
-            Continue
+           <a href="password">Continue</a>
           </button>
+          </div>
 
           <div className="line-file-log">
             <div className="line-log"></div>
@@ -70,7 +72,7 @@ const Login = () => {
           </div>
           <div className="creat-account">
             <button className="creat-button">
-              <a href="#">Creat a new account</a>
+              <a href="/">Creat a new account</a>
             </button>
           </div>
           <div className="Email-me-log">

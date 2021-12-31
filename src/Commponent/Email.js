@@ -9,6 +9,7 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import AppleIcon from '@material-ui/icons/Apple';
 import {FcGoogle} from "react-icons/fc"
 import Login from "../Login";
+import { Link } from "react-router-dom";
 
 
 
@@ -73,7 +74,7 @@ const Email = () => {
         <h1>Let's get started</h1>
         <p>
           First, Create Your WordPress.com account. Have an account?{" "}
-          <a href="#">Log in</a>
+          <a href="login">Login</a>
         </p>
       </div>
 

@@ -212,9 +212,19 @@
   font-size: 15px;
   font-weight: bolder;
 }
-.button-login .login-first-button :hover {
-  color: rgb(14, 23, 102);
+.button-login .login-first-button a {
+   text-decoration: none;
+    color: white;
+
 }
+.hover-log .login-first-button:hover {
+  background-color: rgb(17, 72, 109);
+}
+.password-login .password-second-button:hover {
+  background-color: rgb(17, 72, 109);
+}
+
+
 .search {
   height: 500px;
 
