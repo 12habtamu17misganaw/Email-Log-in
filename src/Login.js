@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField } from "@material-ui/core";
 import AppleIcon from "@material-ui/icons/Apple";
 import { FcGoogle } from "react-icons/fc";
 import PublicIcon from "@material-ui/icons/Public";
+import { useDispatch } from "react-redux";
+import { createPost } from "../src/action/Posts";
 
 const Login = () => {
+
+ 
+
+const [userData, setUserData] = useState({
+  username: ''
+})
+const dispatch = useDispatch()
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  dispatch( createPost(userData))
+}
   return (
-    <div className="first-div">
+    <div className="first-div" autoComplete="off" noValidate onSubmit={handleSubmit} >
       <div className="Logo">
         <h1 className="logo">W</h1>
       </div>
@@ -21,6 +35,7 @@ const Login = () => {
           margin="dense"
           variant="outlined"
           className="username-log mt-0 mb-3"
+          value={userData.username} onChange= {(e) => setUserData({ ...userData, username: e.target.value})}
         />
         </div>
         <div className="service">

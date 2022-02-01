@@ -1498,3 +1498,9 @@
     font-size: 60px;
   }
   }
+
+  .login-center .password-login .password-second-button a {
+    color: white;
+    text-decoration: none;
+    
+  }

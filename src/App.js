@@ -6,11 +6,23 @@ import Email from "./Commponent/Email";
 import Logo from "./Commponent/Logo";
 import Login from "./Login";
 import Password from "./Commponent/Password";
+import { getPostes } from "./action/Posts";
+import { useDispatch } from "react-redux";
+import Posts from '../src/posts/Posts';
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
  
+  const dispatch = useDispatch()
   
+  useEffect(() => {
+  dispatch(getPostes());
+
+  }, [dispatch])
+
+
+
+
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
@@ -43,7 +55,10 @@ function App() {
 
   return (
  <BrowserRouter>
+ <Posts />
  <Routes>
+   
+
    <Route path='/' element={<Email />} />
     <Route path='/login' element={<Login />} />
     <Route path='/password' element={<Password />} />
